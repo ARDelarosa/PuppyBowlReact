@@ -22,9 +22,14 @@ function Allplayers() {
         navigate(`/players/${id}`);
     }
 
+    const handleCreatePlayer =() => {
+        navigate('/new-player');
+    }
+
     return (
         <div className="allplayers">
             <h1>All Players</h1>
+            <button onClick={handleCreatePlayer}>Create Player</button>
             <ul>
                 {players.map(player => (
                     <li key={player.id}>
