@@ -18,8 +18,8 @@ function NewPlayerForm() {
                 imageUrl,
             };
             const createdPlayer = await createPlayer(newPlayer);
-            console.log('Created player:', createdPlayer);
-            setMessage(`Player ${createdPlayer.name} created successfully!`);
+            console.log('Created player:', createdPlayer.newPlayer);
+            setMessage(`Player ${createdPlayer.newPlayer.name} created successfully!`);
             // Next part clears the form.
             setName('');
             setBreed('');
